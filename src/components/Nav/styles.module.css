@@ -1,0 +1,35 @@
+.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 65px;
+	padding: 0.875em;
+}
+
+.navButton {
+	margin-right: 12px;
+	background: none;
+}
+
+.navigation {
+	display: none;
+	align-items: center;
+	height: 100%;
+}
+
+.navUserStatus {
+	display: flex;
+	align-items: center;
+}
+
+.avatar {
+	width: 26px;
+	height: 26px;
+	border-radius: 9999px;
+}
+
+.cart {
+	background: none;
+	margin-right: 16px;
+}
