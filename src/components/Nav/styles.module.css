@@ -13,9 +13,37 @@
 }
 
 .navigation {
-	display: none;
-	align-items: center;
+	position: fixed;
+	background: var(--white);
+	top: 0;
+	left: -600px;
+	width: 200px;
+	padding: 1.25em;
+	z-index: 20;
+	transition: 0.25s ease;
 	height: 100%;
+}
+
+.navigationOverlay {
+	background: var(--modal);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 15;
+	right: 0;
+	bottom: 0;
+}
+
+.navigation a {
+	color: var(--text-primary);
+	display: block;
+	font-size: 1em;
+	margin: 20px 0;
+	font-weight: 700;
+}
+
+.showMenu {
+	left: 0;
 }
 
 .navUserStatus {
@@ -31,5 +59,38 @@
 
 .cart {
 	background: none;
-	margin-right: 16px;
+	margin-right: 24px;
+}
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		width: 80%;
+		margin: auto;
+		height: 80px;
+	}
+	
+	.navigationContainer {
+		display: flex;
+		align-items: center;
+		gap: 0 24px;
+	}
+	
+	.navButton {
+		display: none;
+	}
+	
+	.navigation {
+		display: flex;
+		position: static;
+		gap: 0 6px;
+	}
+	
+	.navigation a {
+		margin: 0 12px;
+	}
+	
+	.avatar {
+		width: 36px;
+		height: 36px;
+	}
 }
