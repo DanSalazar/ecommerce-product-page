@@ -2,12 +2,13 @@
 
 :root {
   --primary-color: hsl(26, 100%, 55%);
-  --primary-color-tenue: hsl(26, 100%, 55%, 50%);
+  --primary-color-tenue: hsl(26, 100%, 55%, 10%);
   --secondary-color: hsl(25, 100%, 94%);
   --text-primary: hsl(220, 13%, 13%);
   --text-secondary: hsl(219, 9%, 45%);
   --color-disabled: hsl(220, 14%, 75%);
   --background: hsl(223, 64%, 98%);
+  --nav-border: hsl(0, 0%, 0%, 5%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --modal: hsl(0, 0%, 0%, 75%);
@@ -15,6 +16,7 @@
   --font-family: 'Kumbh Sans' ,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  --transitions: 0.2s ease;
 }
 
 * {
@@ -26,8 +28,15 @@
 body {
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
+  font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 a {
