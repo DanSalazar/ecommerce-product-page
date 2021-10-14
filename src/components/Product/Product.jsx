@@ -1,13 +1,12 @@
 import styles from './styles.module.css'
 
+import ProductImages from './ProductImages.jsx'
 import ProductInfo from './ProductInfo.jsx'
 
 function Product () {
 	return (
-		<div>
-			<div className={styles.productContainer} >
-				<img src="assets/image-product-1.jpg" alt="Image of shoes" />
-			</div>
+		<div className={styles.productWrapper}>
+			<ProductImages/>
 		  <ProductInfo/>
 		</div>
 	)
