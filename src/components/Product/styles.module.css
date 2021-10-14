@@ -303,4 +303,21 @@
 	.productWrapper {
 		justify-content: space-around;
 	}
+	
+	.productImgContainer {
+		width: 400px;
+	}
+	
+	.productThumbnail {
+		width: 76px;
+		height: 76px;
+	}
+	
+	.productInfo {
+		width: 40%;
+	}
+	
+	.productImgContainer img {
+		max-height: 420px;
+	}
 }
