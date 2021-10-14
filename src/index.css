@@ -39,6 +39,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 a {
   text-decoration: none;
 }
