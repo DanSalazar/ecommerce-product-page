@@ -16,14 +16,15 @@ function UserNav () {
   return (
     <div className={styles.navUserStatus} >
       <button className={styles.cart} onClick={handleShowCart}>
-        {cart.quantity > 0 && <div className={styles.cartNotification}>
-          <span>{cart.quantity}</span>
-        </div>}
+        {cart.quantity > 0 && 
+          <div className={styles.cartNotification}>
+            <span>{cart.quantity}</span>
+          </div>}
   
         <Cart fill={'#1d2025'}/>
       </button>
       
-      <img src='assets/image-avatar.png' className={styles.avatar} alt='User'/>
+      <img src='images/image-avatar.png' className={styles.avatar} alt='User'/>
     
       {showCart && <ShopCart product={cart}/>}
     </div>

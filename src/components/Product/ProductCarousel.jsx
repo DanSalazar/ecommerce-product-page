@@ -32,7 +32,7 @@ function ProductCarrousel () {
           className={`${styles.buttonControl} ${styles.previous}`}>
           <PreviousIcon/>
         </button>
-        <img src={`assets/image-product-${currentImg}.jpg`} alt='Image of shoes'/>
+        <img src={`images/image-product-${currentImg}.jpg`} alt='Image of shoes'/>
         <button
           onClick={handleNext}
           className={`${styles.buttonControl} ${styles.next}`}>

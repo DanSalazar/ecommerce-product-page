@@ -14,6 +14,7 @@
 .navButton {
 	margin-right: 16px;
 	background: none;
+  fill: var(--text-secondary);
 }
 
 .navigation {
@@ -42,7 +43,7 @@
 	color: var(--text-primary);
 	display: block;
 	font-size: 1em;
-	margin: 20px 0;
+	margin: 25px 0;
 	font-weight: 700;
 }
 
@@ -228,9 +229,7 @@
 		width: 42px;
 		height: 42px;
 	}
-}
-
-@media screen and (min-width: 1024) {
+  
 	.navLogo img {
 		width: 100%;
 	}

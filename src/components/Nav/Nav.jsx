@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { showMenu, closeMenu } from '../../redux/actions/menuActions.js'
 
 import UserNav from './UserNav.jsx'
+import CloseIcon from '../Icons/CloseIcon'
 
 const navLinks = ['Collection', 'Men', 'Women', 'About', 'Contact']
 
@@ -22,19 +23,20 @@ function Nav () {
 			
 				<div>
 					<button className={styles.navButton} onClick={handleShowMenu}>
-						<img src='assets/icon-menu.svg' alt='Menu'/>
+						<img src='images/icon-menu.svg' alt='Menu'/>
 					</button>
 	
 					<a href='#' className={styles.navLogo}>
-						<img src='assets/logo.svg' alt='Company logo'/>
+						<img src='images/logo.svg' alt='Company logo'/>
 					</a>
 				</div>
 	
 				<div className={`${menuState && styles.navigationOverlay}`}/>
 				<div className={`${styles.navigation} ${menuState && styles.showMenu}`}>
-					{menuState && <button className={styles.navButton} onClick={handleShowMenu}>
-						<img src='assets/icon-close.svg' alt='Close Menu'/>
-					</button>}
+					{menuState && 
+            <button className={styles.navButton} onClick={handleShowMenu}>
+              <CloseIcon/>
+            </button>}
 						
 					{navLinks.map(link => (
 						<div className={styles.navLinkContainer} key={link}>

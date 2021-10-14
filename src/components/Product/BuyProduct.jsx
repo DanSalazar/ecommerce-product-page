@@ -34,11 +34,11 @@ function BuyProduct () {
 		<div className={styles.buyProductContainer}>
 			<div className={styles.productCount} >
 				<button onClick={handleMinus} >
-					<img src='assets/icon-minus.svg' alt="-"/>
+					<img src='images/icon-minus.svg' alt='-'/>
 				</button>
 				<span>{count}</span>
 				<button onClick={handlePlus} >
-					<img src='assets/icon-plus.svg' alt="+"/>
+					<img src='images/icon-plus.svg' alt='+'/>
 				</button>
 			</div>
 			<Button onClick={buyProduct}>

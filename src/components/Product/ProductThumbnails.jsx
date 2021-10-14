@@ -15,7 +15,7 @@ function ProductThumbnails ({ selected, setSelected }) {
           className={`${styles.productThumbnail} ${selected === n && styles.selected}`} 
           onClick={() => handleSelected(n)}
           key={n}>
-          <img src={`assets/image-product-${n}-thumbnail.jpg`} alt='Image of shoes'/>
+          <img src={`images/image-product-${n}-thumbnail.jpg`} alt='Image of shoes'/>
         </button>
       ))}
     </div>
