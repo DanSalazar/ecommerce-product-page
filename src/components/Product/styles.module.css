@@ -134,7 +134,7 @@
 	
 	.productImgContainer {
 		margin: auto;
-		width: 360px;
+		width: 340px;
 	}
 	
 	.productInfo {
@@ -162,8 +162,8 @@
 	
 	.productThumbnail {
 		cursor: pointer;
-		width: 74px;
-		height: 74px;
+		width: 68px;
+		height: 68px;
 		background: var(--white);
 		border-radius: var(--border-radius);
 		overflow: hidden;
@@ -204,8 +204,7 @@
 	}
 	
 	.carouselModal .productImgContainer {
-		margin: auto;
-		width: 420px;
+		width: 430px;
 	}
 	
 	.carouselModal .productImgContainer img {
@@ -215,14 +214,16 @@
 	
 	.carouselModal .productImgContainer .buttonControl {
 		display: block;
+		height: 45px;
+		width: 45px;
 	}
 	
 	.previous {
-		left: -12px;
+		left: -20px;
 	}
 	
 	.next {
-		right: -12px;
+		right: -20px;
 	}
 	
 	.closeCarouselModal {
@@ -242,7 +243,7 @@
 
 @media screen and (min-width: 1024px) {
 	.productWrapper {
-		height: 85vh;
+		height: 80vh;
 		display: flex;
 		align-items: center;
 		gap: 0 8px;
@@ -256,19 +257,20 @@
 	
 	.productInfo {
 		padding: 0;
-		width: 40%;
+		width: 45%;
 	}
 	
 	.companyName {
-		font-size: 0.875em;
+		font-size: 0.75em;
 	}
 	
 	.productName {
+		margin-top: 16px;
 		font-size: 2.75em;
 	}
 	
 	.productDescription {
-		margin: 24px 0;
+		margin: 20px 0;
 		font-size: 1em;
 	}
 	
@@ -285,17 +287,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 0 12px;
+		gap: 0 16px;
 	}
 	
 	.productCount {
-		width: 40%;
+		width: 200px;
 	}
-	
-	.buyProductContainer button {
-		width: 60%;
-	}
-	
+
 	.productThumbnails {
 		justify-content: space-between;
 	}

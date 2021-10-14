@@ -99,7 +99,7 @@
 	z-index: 10;
 	border-radius: var(--border-radius);
 	background: var(--white);
-	box-shadow: 0px 8px 20px hsl(0, 0%, 0%, 40%);
+	box-shadow: 0px 8px 20px hsl(0, 0%, 0%, 25%);
 }
 
 .shoppingCartTitle {
@@ -226,8 +226,8 @@
 	}
 	
 	.avatar {
-		width: 42px;
-		height: 42px;
+		width: 46px;
+		height: 46px;
 	}
   
 	.navLogo img {
